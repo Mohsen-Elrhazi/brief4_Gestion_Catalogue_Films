@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class CategoryMapper {
 
-    public static CategoryDTO toDTO(Category category) {
+    public CategoryDTO toDTO(Category category) {
         CategoryDTO dto = new CategoryDTO();
         dto.setIdCategory(category.getIdCategory());
         dto.setName(category.getName());

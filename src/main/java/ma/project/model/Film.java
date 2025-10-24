@@ -16,11 +16,11 @@ public class Film {
     private Double rating;
 
     @ManyToOne
-    @JoinColumn(name = "director_id")
+    @JoinColumn(name = "director_id", nullable = true)
     private Director director;
 
     @ManyToOne
-    @JoinColumn(name = "category_id")
+    @JoinColumn(name = "category_id",  nullable = true)
     private Category category;
 
     public Film(){}

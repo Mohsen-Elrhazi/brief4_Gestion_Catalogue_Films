@@ -13,7 +13,7 @@ public class Category {
     private String name;
     private String Description;
 
-    @OneToMany(mappedBy = "category", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "category")
     private List<Film> films;
 
     public Category(){}
